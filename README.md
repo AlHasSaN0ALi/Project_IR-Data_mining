@@ -31,3 +31,12 @@ Information Retrieval Models: TF-IDF, BM25. # ranking models
 Advanced Embeddings: ELMo.
 
 Web Development: Flask, ngrok.
+
+
+![image](https://github.com/AlHasSaN0ALi/Project_IR-Data_mining/assets/122312101/6f3cae28-9840-43e5-b827-f2147a82571b)
+
+
+The Results
+
+![image](https://github.com/AlHasSaN0ALi/Project_IR-Data_mining/assets/122312101/3e0c61a2-4a6a-4b3e-8dc4-7c2019d08af4)
+

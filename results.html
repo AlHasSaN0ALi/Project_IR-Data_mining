@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            color: #004080;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #007bff;
+            color: #fff;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #cce5ff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Search Results for "{{ query }}"</h1>
+    <table>
+        <tr>
+            <th>qid</th>
+            <th>docid</th>
+            <th>docno</th>
+            <th>rank</th>
+            <th>score</th>
+            <th>query</th>
+        </tr>
+        {% for result in results %}
+        <tr>
+            <td>{{ result.qid }}</td>
+            <td>{{ result.docid }}</td>
+            <td>{{ result.docno }}</td>
+            <td>{{ result.rank }}</td>
+            <td>{{ result.score }}</td>
+            <td>{{ result.query }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
